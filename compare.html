@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Existing vs Proposed – Gut Health landing page</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; font-family: Jost, Arial, sans-serif; color: #1a1b1a; background: #faf8f3; line-height: 1.55; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+  h1, h2 { font-family: Marcellus, serif; font-weight: 400; } h1 { font-size: 30px; margin: 0 0 4px; } h2 { font-size: 22px; margin: 44px 0 14px; }
+  .sub { color: #5d5a55; margin: 0 0 28px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  .col h3 { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #7c6039; margin: 0 0 10px; }
+  .phone { width: 340px; max-width: 100%; border: 1px solid rgba(26,27,26,.18); background: #fff; box-shadow: 0 12px 36px rgba(60,45,20,.08); }
+  .phone img, .phone iframe { width: 100%; display: block; border: 0; } .phone iframe { height: 700px; }
+  ul { padding-left: 18px; margin: 14px 0 0; font-size: 15.5px; } li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; background: #fff; } th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid rgba(26,27,26,.14); vertical-align: top; }
+  th { font-weight: 600; border-bottom: 1px solid #1a1b1a; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; } .shots img { width: 100%; border: 1px solid rgba(26,27,26,.18); }
+  .note { font-size: 13.5px; color: #5d5a55; }
+  @media (max-width: 760px) { .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Gut Health landing page – existing vs proposed</h1>
+  <p class="sub">Maison Santé · prototype for discussion, 8 October 2026 · the live page was read only; nothing in production was changed</p>
+
+  <div class="pair">
+    <div class="col">
+      <h3>Existing – first screen (live page, screenshot 7 Oct)</h3>
+      <div class="phone"><img src="compare/existing-mobile-hero.jpg" alt="Existing landing page, first mobile screen"></div>
+      <ul>
+        <li>Offer and doctor are visible straight away.</li>
+        <li>Button says “Talk to a Doctor”, but it scrolls to a three-question form and the chat is answered by reception.</li>
+        <li>Pay and Claim appears about halfway down a page that is roughly 16 phone screens long.</li>
+        <li>The headline is about bloating only, whichever ad was clicked.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Proposed – first screen (live prototype, click through it)</h3>
+      <div class="phone"><iframe src="index.html?clean=1" title="Prototype"></iframe></div>
+      <ul>
+        <li>Same brand, same offer card, same approved wording where it exists.</li>
+        <li>Doctor named with her title; “tests are separate” and Pay and Claim stated before the first tap.</li>
+        <li>Button says what happens: “Check availability”.</li>
+        <li>Headline follows the ad (bloating, heartburn, irregular digestion).</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Side by side</h2>
+  <table>
+    <tr><th></th><th>Existing page</th><th>Proposed page</th></tr>
+    <tr><td>Length on a phone</td><td>About 13,200 px (16 screens)</td><td>About 8,000 px (10 screens)</td></tr>
+    <tr><td>Headline</td><td>Bloating, for every visitor</td><td>Matches the ad that was clicked</td></tr>
+    <tr><td>Who the patient sees</td><td>Small avatar; credentials at 69% of the page</td><td>Name and title in the first line; credentials in section 5</td></tr>
+    <tr><td>Primary button</td><td>“Talk to a Doctor” (opens a form, then reception)</td><td>“Check availability” (does what it says)</td></tr>
+    <tr><td>Pay and Claim</td><td>52% down the page; no statement on direct billing</td><td>Directly under the first button, in its own section, and as one tap before WhatsApp; “no direct billing” stated</td></tr>
+    <tr><td>Tests</td><td>“Consultation only” in small print; five test cards</td><td>“Tests, if needed, are separate” beside the price; tests in one sentence</td></tr>
+    <tr><td>Questions before WhatsApp</td><td>Three required; no heartburn option; no insurance question</td><td>Two required (concern, Pay and Claim), one optional; heartburn included</td></tr>
+    <tr><td>Message sent to WhatsApp</td><td>Concern, duration, history</td><td>Same format, plus Pay and Claim status, the offer and a reference code</td></tr>
+    <tr><td>After the tap</td><td>Nothing on the page says what happens next</td><td>Three steps, clinic hours, and what happens outside hours</td></tr>
+    <tr><td>Mobile</td><td>No persistent button</td><td>Sticky “AED 247 · Check availability” bar after the first screen</td></tr>
+    <tr><td>Placeholder text</td><td>“[Test turnaround — confirm with lab]” is live in the FAQ</td><td>Unverified items are left out, or outlined in the prototype as “to confirm”</td></tr>
+  </table>
+
+  <h2>What the prototype demonstrates</h2>
+  <div class="shots">
+    <figure><img src="compare/prototype-mobile-hero.jpg" alt=""><figcaption class="note">Proposed first screen</figcaption></figure>
+    <figure><img src="compare/prototype-handoff.jpg" alt=""><figcaption class="note">Demo: the message that would open in WhatsApp, and what Respond.io would store</figcaption></figure>
+    <figure><img src="compare/prototype-reply.jpg" alt=""><figcaption class="note">Demo: a first reply that continues from the page (example times, not live availability)</figcaption></figure>
+    <figure><img src="compare/existing-mobile-quiz.jpg" alt=""><figcaption class="note">Existing: the form the “Talk to a Doctor” button leads to</figcaption></figure>
+  </div>
+  <p class="note" style="margin-top:28px">Images of the clinic and of Dr. Hareem in the prototype are loaded from the live site’s existing files and are not copied. The demo sends nothing to WhatsApp, Respond.io, the booking system, GA4 or Meta.</p>
+</div>
+</body>
+</html>

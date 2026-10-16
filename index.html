@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>PROTOTYPE – Gut Health Consultation | Maison Santé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo bar: prototype only, not part of the proposed page -->
+<div class="demo-bar" id="demoBar">
+  <span><strong>Prototype</strong> · demo mode · nothing here contacts the clinic</span>
+  <span class="demo-controls">
+    <label>Arriving from ad:
+      <select id="adVariant">
+        <option value="bloating">Bloating ad</option>
+        <option value="reflux">Heartburn ad</option>
+        <option value="irregular">Irregular digestion ad</option>
+      </select>
+    </label>
+    <button type="button" id="toggleEvents">Events</button>
+  </span>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <img class="logo" src="https://maisonsante.ae/gut-health-consultation/assets/logo-velvet-black.webp" alt="Maison Santé" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-text',textContent:'MAISON SANTÉ'}))">
+    <div class="header-contact">
+      <span class="header-phone">+971 4 324 4432</span>
+      <span class="header-loc">Umm Suqeim 2, Dubai</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. Recognition + offer + first action -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Gut Health Consultation · Maison Santé</p>
+      <h1 id="heroHeadline">Bloated after almost every meal? Let’s find out why.</h1>
+      <p class="lead">A consultation with Dr. Hareem Mir, General &amp; Functional Medicine Physician, to find the actual cause, not just another diet to try.</p>
+
+      <div class="offer-card">
+        <div class="offer-doc">
+          <img src="https://maisonsante.ae/gut-health-consultation/assets/avatar-dr-hareem.webp" alt="Dr. Hareem Mir" onerror="this.style.display='none'">
+          <div>
+            <span class="label">Entry consultation</span>
+            <span class="label">with Dr. Hareem Mir</span>
+          </div>
+        </div>
+        <div class="price"><s>AED 495</s> <strong>AED 247</strong></div>
+        <p class="price-note">50% launch offer on the consultation only. Tests, if needed, are separate.</p>
+      </div>
+
+      <a class="btn" href="#qualify" data-cta="hero">Check availability</a>
+      <p class="hero-insure">Insured? We work on Pay and Claim: you pay at your visit and we prepare your claim documents. <a href="#insurance">How it works</a></p>
+      <p class="microline">DHA licensed clinic · Umm Suqeim 2, Dubai</p>
+    </div>
+    <div class="hero-photo">
+      <img src="https://maisonsante.ae/gut-health-consultation/assets/hero-lounge.webp" alt="Maison Santé clinic at Meyan Mall" onerror="this.parentNode.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- 2. "This sounds like me" -->
+<section class="section bg-white">
+  <div class="container narrow">
+    <h2>Does this sound familiar?</h2>
+    <ul class="checks">
+      <li>You’re bloated within an hour of most meals</li>
+      <li>Certain foods set you off and you can’t pin down which ones</li>
+      <li data-confirm="Symptom line added for the heartburn ad – wording to confirm with Dr. Hareem">Heartburn or reflux keeps coming back</li>
+      <li>You’re wiped out after eating, not just full</li>
+      <li>Some weeks your digestion is fine, other weeks it isn’t</li>
+      <li>Your bloodwork came back “normal” but you still don’t feel right</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. Curiosity -->
+<section class="section bg-charcoal">
+  <div class="container narrow">
+    <h2>Why find the cause, not just manage the symptom</h2>
+    <p>Bloating, fatigue after eating, and unpredictable digestion usually have a specific driver: bacterial imbalance, a food intolerance, low stomach acid, inflammation. Treat the symptom without finding the driver, and it comes back.</p>
+  </div>
+</section>
+
+<!-- 4 + 6. What you get -->
+<section class="section bg-cream-soft">
+  <div class="container narrow">
+    <h2>What your consultation includes</h2>
+    <ol class="steps">
+      <li><span class="num">01</span><div><h3>A proper conversation</h3><p>You sit down with Dr. Hareem. You go through your symptoms, your history, and what you’ve already tried.</p></div></li>
+      <li><span class="num">02</span><div><h3>Testing, only if it’s needed</h3><p>Comprehensive stool test, food intolerance panel, H. Pylori check, coeliac panel, or a vitamin and mineral panel. Only what fits your case, never the full panel by default.</p></div></li>
+      <li><span class="num">03</span><div><h3>A plan you can actually follow</h3><p>What to eat, what to avoid, what to treat first, in that order.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5. Who will help me -->
+<section class="section bg-white">
+  <div class="container narrow doctor">
+    <img src="https://maisonsante.ae/gut-health-consultation/assets/team-dr-hareem-mir.webp" alt="Dr. Hareem Mir" onerror="this.style.display='none'">
+    <div>
+      <p class="eyebrow">Who you’ll see</p>
+      <h2>Dr. Hareem Mir</h2>
+      <p class="role">General &amp; Functional Medicine Physician</p>
+      <p>M.B.B.S., Gulf Medical University · MBA in Healthcare Management, UCAM (Spain) · Institute for Functional Medicine (IFM) trained</p>
+      <p class="muted">Part of the Maison Santé team with Dr. Maria Alonso, Dubai’s first DHA-licensed preventive physician, and Rita Aoun, Clinical Dietitian &amp; Functional Nutritionist.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. How much -->
+<section class="section bg-cream" id="offer">
+  <div class="container narrow">
+    <h2>The offer</h2>
+    <div class="offer-panel">
+      <div class="price big"><s>AED 495</s> <strong>AED 247</strong></div>
+      <p>Entry consultation with Dr. Hareem Mir · 50% launch offer</p>
+      <div class="two-col">
+        <div><h3>Included</h3><ul class="plain"><li>The consultation with Dr. Hareem</li><li>A clear next step: tests only if they are worth doing</li></ul></div>
+        <div><h3>Separate</h3><ul class="plain"><li>Any tests Dr. Hareem recommends</li><li>Follow-up visits</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Insurance, before the conversion point -->
+<section class="section bg-white" id="insurance">
+  <div class="container narrow">
+    <h2>Paying with insurance?</h2>
+    <p>We work on a Pay and Claim basis, so nothing waits on insurance approval.</p>
+    <ol class="steps compact">
+      <li><span class="num">01</span><div><h3>You pay at your visit</h3></div></li>
+      <li><span class="num">02</span><div><h3>We prepare your documents</h3><p>An itemized medical invoice with diagnosis codes, plus your claim form filled in and ready to sign.</p></div></li>
+      <li><span class="num">03</span><div><h3>You submit and get reimbursed</h3><p>Coverage depends on your policy.</p></div></li>
+    </ol>
+    <p class="notice" data-confirm="‘No direct billing’ is how reception answers today – confirm the exact wording before it goes live">We don’t offer direct billing. If your plan only covers direct-billing clinics, this consultation would be self-paid.</p>
+  </div>
+</section>
+
+<!-- 9. Minimal qualification + 10. Booking intent -->
+<section class="section bg-cream" id="qualify">
+  <div class="container narrow">
+    <div class="card">
+      <h2>Check availability</h2>
+      <p class="muted">Two taps, so you don’t have to explain everything again on WhatsApp.</p>
+
+      <fieldset id="qConcern">
+        <legend><span class="num">01</span> What are you mainly experiencing?</legend>
+        <div class="chips" data-group="concern">
+          <button type="button" class="chip" data-value="Bloating / discomfort after eating" data-key="bloating">Bloating after eating</button>
+          <button type="button" class="chip" data-value="Heartburn / reflux" data-key="reflux">Heartburn or reflux</button>
+          <button type="button" class="chip" data-value="Irregular digestion (constipation or diarrhea)" data-key="irregular">Irregular digestion</button>
+          <button type="button" class="chip" data-value="Reactions to certain foods">Reactions to certain foods</button>
+          <button type="button" class="chip" data-value="Fatigue / low energy after meals">Tired after meals</button>
+          <button type="button" class="chip" data-value="Other digestive symptoms">Something else</button>
+        </div>
+      </fieldset>
+
+      <fieldset id="qPay">
+        <legend><span class="num">02</span> This consultation is Pay and Claim</legend>
+        <p class="hint">You pay AED 247 at the clinic and we give you the documents to submit to your insurer.</p>
+        <div class="chips" data-group="pay">
+          <button type="button" class="chip" data-value="accepted">That works for me</button>
+          <button type="button" class="chip" data-value="self">I’m paying myself</button>
+          <button type="button" class="chip" data-value="direct">I need direct billing</button>
+        </div>
+        <div class="direct-note" id="directNote" hidden>
+          <p>Thank you for telling us. We don’t offer direct billing, so we wouldn’t want you to come in expecting it. If Pay and Claim could work for you, you’re very welcome to continue. Otherwise it’s worth a quick check with your insurer first.</p>
+        </div>
+      </fieldset>
+
+      <fieldset id="qDuration">
+        <legend><span class="num">03</span> How long has this been going on? <em>(optional)</em></legend>
+        <div class="chips" data-group="duration">
+          <button type="button" class="chip" data-value="Just started, less than a month">Less than a month</button>
+          <button type="button" class="chip" data-value="A few months">A few months</button>
+          <button type="button" class="chip" data-value="Over a year">Over a year</button>
+          <button type="button" class="chip" data-value="On and off for years">On and off for years</button>
+        </div>
+      </fieldset>
+
+      <p class="form-error" id="formError" role="alert" hidden>Please choose your main concern and a payment option.</p>
+      <button type="button" class="btn wide" id="waBtn">Check availability on WhatsApp</button>
+
+      <ol class="next">
+        <li><strong>1</strong> Your answers open in WhatsApp, already written</li>
+        <li><strong>2</strong> Our team replies with available times</li>
+        <li><strong>3</strong> You visit the clinic and leave with a plan</li>
+      </ol>
+      <p class="muted small">Clinic hours: Sunday to Friday, 8:00 AM – 8:00 PM. Messages sent outside these hours are answered when we reopen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Trust: verified facts only -->
+<section class="section bg-white">
+  <div class="container narrow">
+    <h2>Where you’ll be treated</h2>
+    <div class="facts">
+      <div><span class="label">Clinic</span>DHA licensed · Meyan Mall, Umm Suqeim 2, Dubai</div>
+      <div><span class="label">Hours</span>Sunday to Friday, 8:00 AM – 8:00 PM</div>
+      <div><span class="label">Phone</span>+971 4 324 4432</div>
+    </div>
+    <p class="placeholder" data-confirm="Add the real Google rating and two consented patient quotes here. Nothing has been invented.">Reviews and rating: to be added from verified sources.</p>
+  </div>
+</section>
+
+<!-- 12. FAQ: questions that actually arrive in chat -->
+<section class="section bg-cream-soft">
+  <div class="container narrow">
+    <h2>Questions patients ask us</h2>
+    <details><summary>How much does the consultation cost?</summary><p>Entry consultation with Dr. Hareem: AED 495. With the 50% launch offer: AED 247.</p></details>
+    <details><summary>Are tests included in the AED 247?</summary><p>No. The offer covers the consultation. Tests are only recommended if your consultation points to something worth investigating, and they are priced separately.</p></details>
+    <details><summary>Does insurance cover this?</summary><p>We’re a Pay and Claim clinic. You pay at your visit, we prepare your documents and help you claim reimbursement; coverage depends on your policy.</p></details>
+    <details><summary>Do you offer direct billing?</summary><p>No. We work on Pay and Claim only.</p></details>
+    <details><summary>Who will I see?</summary><p>Dr. Hareem Mir, General &amp; Functional Medicine Physician.</p></details>
+    <details><summary>What happens after I message you?</summary><p>Our team replies on WhatsApp with available times. You won’t be asked to repeat what you’ve told us here.</p></details>
+    <details><summary>Where’s the clinic?</summary><p>Meyan Mall, Umm Suqeim 2, Dubai.</p></details>
+  </div>
+</section>
+
+<section class="section bg-charcoal center">
+  <div class="container narrow">
+    <h2>Ready to find out what’s actually going on?</h2>
+    <a class="btn" href="#qualify" data-cta="final">Check availability</a>
+  </div>
+</section>
+
+</main>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <span><s>AED 495</s> <strong>AED 247</strong> · Dr. Hareem</span>
+  <a class="btn small" href="#qualify" data-cta="sticky">Check availability</a>
+</div>
+
+<!-- DEMO: what would be handed to WhatsApp / Respond.io -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Demonstration of the WhatsApp hand-off" hidden>
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <p class="demo-tag">Demonstration only · no message is sent</p>
+
+    <div id="step1">
+      <h3>This message would open in WhatsApp</h3>
+      <div class="wa"><div class="bubble out" id="waMessage"></div></div>
+      <h3>…and this would be stored on the Respond.io contact</h3>
+      <table class="kv" id="kvTable"></table>
+      <button class="btn wide" id="toStep2">See the reply the patient would get</button>
+    </div>
+
+    <div id="step2" hidden>
+      <h3>First reply – no “How may we assist you?”</h3>
+      <div class="wa">
+        <div class="bubble out small" id="waEcho"></div>
+        <div class="bubble in" id="waReply"></div>
+      </div>
+      <p class="muted small">Example wording. Times shown next are illustrative, not live availability.</p>
+      <div class="slots" id="slots"></div>
+    </div>
+
+    <div id="step3" hidden>
+      <h3>Booking confirmed <span class="muted">(example)</span></h3>
+      <div class="wa"><div class="bubble in" id="waConfirm"></div></div>
+      <p class="muted small">In the real journey this confirmation also sets the contact to “Booked” in Respond.io, so the lead, the ad and the appointment stay joined.</p>
+      <button class="btn wide ghost" id="restart">Start again</button>
+    </div>
+  </div>
+</div>
+
+<!-- DEMO: measurement events -->
+<aside class="events" id="events" hidden>
+  <div class="events-head"><strong>Measurement events (demo log)</strong><button type="button" id="closeEvents">×</button></div>
+  <ol id="eventLog"></ol>
+</aside>
+
+<script src="message.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
